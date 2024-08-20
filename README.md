@@ -13,7 +13,7 @@ g++ grass-tui.cpp -o grass.exe && ./grass.exe
 ```
 
 ### Support for?
-Support is only for windows (for now), and this absolutely doesn't mean that you cant edit or even remove anything you want. 
+Support is only for windows (for now), and this absolutely doesn't mean that you cant edit or even remove anything that is windows related functions. 
 
 ### More?
 If you have any ideas to make it better feel free to [post an issue](https://github.com/0xDot-mal/grass-tui/issues) this includes finding a bug.
