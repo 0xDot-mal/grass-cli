@@ -1,3 +1,5 @@
+
+
 # grass-tui
 A mini project that im gonna update as much as i get good in cpp.
 
@@ -17,7 +19,7 @@ Support is only for windows (for now), and this absolutely doesn't mean that you
 
 ### More?
 If you have any ideas to make it better feel free to [post an issue](https://github.com/0xDot-mal/grass-tui/issues) this includes finding a bug.
-
 <hr>
 
-**You can find the full changelog for the *pre-release* at(if you doesn't know)**: https://github.com/0xDot-mal/grass-tui/commits/v.0.0-pre.1
+# IMPORTANT
+Only compile the files that are on the src folder anything out that folder as an example 'grass-tui.cpp' just ignore it or even delete it.
