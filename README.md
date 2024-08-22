@@ -22,4 +22,4 @@ If you have any ideas to make it better feel free to [post an issue](https://git
 <hr>
 
 # IMPORTANT
-Only compile the files that are on the src folder anything out that folder as an example 'grass-tui.cpp' just ignore it or even delete it.
+Only compile the files that are on the src folder anything out that folder as an example 'grass-cli.cpp' just ignore it or even delete it.
