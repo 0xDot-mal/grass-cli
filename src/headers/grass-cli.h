@@ -12,7 +12,7 @@
 class Cli {
 private:
     static const int pvSIZE = 4;
-    const std::string pvOPEARTION[pvSIZE] = { "+", "-", "*", "%" };
+    const char[5] pvOPEARTION[pvSIZE] = { "+", "-", "*", "%" };
 
     bool eventer = true;
 
@@ -53,14 +53,20 @@ std::string cool() {
         std::cout << "==========================================================/\n\n";
     }
 
-    void checkUserInput(const std::string& input) {
+    void checkUserInput(std::string_view input) {
         std::vector<std::string> commands;
+        commands.reserve(5);
 
         for (int opr = 0; opr < pvSIZE; opr++) {
             if (input == pvOPEARTION[opr]) {
                 eventer = true;
                 return;
             }
+        }
+        else{
+              system("cls");
+              displayHelp();
+              printf("%s","Please choose one from the displayed options.");
         }
         commands.push_back("exit"); // 0
         commands.push_back("help"); // 1
@@ -98,7 +104,7 @@ std::string cool() {
         std::cin >> num1;
         std::cout << cool() << "Enter your operator symbol: ";
         std::cin >> pbOPERATOR;
-        std::cout << cool() << "Enter another number: ";
+        std::cout << cool() << "Enter the second number: ";
         std::cin >> num2;
 
         if (!(isdigit(num1)) || !(isdigit(num2)) ) {
@@ -143,7 +149,7 @@ void displayHelp() {
 
     void start() {
         std::cout << "Run 'help' for more help.\n";
-        std::string inp;
+        const char* inp;
         while (eventer) {
             std::cout << cool();
             std::getline(std::cin, inp);
